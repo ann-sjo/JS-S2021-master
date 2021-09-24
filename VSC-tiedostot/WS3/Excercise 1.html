@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 1</title>
+</head>
+<style>
+    table, tr, td{
+        border: 1px solid gray;
+        width: 50%;
+    }
+</style>
+<body>
+    <button onclick="alert('Clicked me! ' + new Date())" >Button 1</button>
+    <button onclick="showTable();">Button 2</button>
+    <button onclick="btn3();">Button 3</button>
+    
+    <script>
+
+        // Button 3 Table
+        var persons = ["Nyssa P. Skinner", "593-4241 Lacus, St.","Cape Verde", 
+	       "Camilla F. Strickland","391-2150 Ac Rd.","Andorra",
+	       "Reagan U. Andrews", "P.O. Box 472, 2271 Mauris Ave","Faroe Islands",
+	       "Kelsey D. Clark", "P.O. Box 866, 7793 Aliquet Ave","Bulgaria"
+        ];
+        // Button 3 Loop-function
+        function btn3();
+        for (var i=0; i<5; i++){
+            document.write(persons);
+        }
+
+    </script>
+</body>
+</html>

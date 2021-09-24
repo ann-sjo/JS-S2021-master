@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+// Define an object to hold data for a person
+var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue",
+    address:"Street 1",
+    telephone:"+Numbers"
+};
+// Command to print a variable from object: person
+console.log(person.age);
+
+// A function to print object: person
+var printInfo = function printInfo() {
+    console.log(person);
+}
+
+// Calling function printInfo
+printInfo(person);
+
+// Array with 4 objects
+function object1(arr){
+var arr = [person1, person2, person3, person4];
+    var person1 = {
+        firstName:"Mary",
+        lastName:"Shell",
+    }
+    var person2 = {
+        firstName:"Gabriel",
+        lastName:"Stone",
+    }
+    var person3 = {
+        firstName:"River",
+        lastName:"Thorn",
+    }
+    var person4 = {
+        firstName:"Kai",
+        lastName:"Muontain",
+    }
+}
+// Loop through objects and print firstName + lastName
+    for (var i=0; i<4; i++) {
+        console.log(object1((i).firstName + " " + (i).lastName));
+    }
+    </script>
+</body>
+</html>
