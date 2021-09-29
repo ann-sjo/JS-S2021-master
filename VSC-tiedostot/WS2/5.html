@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 5</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <script>
+      // Mahdolliset kuvat
+      var kuvat = [
+        "http://farm4.staticflickr.com/3691/11268502654_f28f05966c_m.jpg",
+        "http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
+        "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg",
+      ];
+      // Random numero 0 ja 2 välillä
+      var numero = Math.round(Math.random() * 2);
+      // Tulostetaan kuva
+      document.write(
+        "<img src='https://cdn-images-1.medium.com/max/1600/1*ot7tWiPCYC01pV0kGmK3qQ.png'>"
+      );
+      // Valitaan kuva
+      document.images[0].src = kuvat[numero];
+    </script>
+  </body>
 </html>
