@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objects</title>
+    <title>6. Objects</title>
 </head>
 <body>
     <script>
@@ -29,6 +29,7 @@ var printInfo = function printInfo() {
 printInfo(person);
 
 // Array with 4 objects
+function object1(arr){
 var arr = [person1, person2, person3, person4];
     var person1 = {
         firstName:"Mary",
@@ -46,9 +47,11 @@ var arr = [person1, person2, person3, person4];
         firstName:"Kai",
         lastName:"Muontain",
     }
+}
+//kesken
 // Loop through objects and print firstName + lastName
     for (var i=0; i<4; i++) {
-        console.log(arr((i).firstName + " " + (i).lastName));
+        console.log(object1((i).firstName + " " + (i).lastName));
     }
     </script>
 </body>
