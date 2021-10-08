@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 4</title>
+</head>
+<body>
+    <script>
+        function changePosition() {
+            document.getElementById("carimage").style.position = "relative";
+            document.getElementById("carimage").style.top = "+500px";
+            document.getElementById("carimage").style.left = "-200px";
+        }
+
+        function animate() {
+            setInterval(
+                function () {move();}, 1000);
+        }
+
+        function move() {
+            var image = document.getElementById("carimage");
+            img.position = "relative";
+            var left = parseInt(img.style.left);
+            img.style.left = (left + 10) + "px";
+            console.log("moved " + left + "px");
+        }
+
+        function fadeOut() {
+            setInterval(
+                function ()
+                {doFadeOut();}, 1000);
+        }
+        function hide () {
+            document.getElementById("carimage").style.display = "none";
+        }
+    </script>
+</body>
+</html>

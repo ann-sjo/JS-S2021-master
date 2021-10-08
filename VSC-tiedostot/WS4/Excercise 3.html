@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 3</title>
+</head>
+<body>
+    <script>
+        function changeImage(){
+            var data = document.getElementById("mySelect").value;
+            var image = document.getElementById("carimage");
+            alert("Your Selection: " + data);
+
+            if (data == "Audi") {
+                image.src = "#"
+            } else if (data == "BMW") {
+                image.src = "#"
+            } else if (data == "Mercedes") {
+                image.src = "#"
+            } else if (data == "Volvo") {
+                image.src = "#"
+            }
+        }
+
+        function showBorder(){
+            document.getElementById("carimage").style = "border: 3px solid red";
+        }
+
+        function hideBorder(){
+            document.getElementById("carimage").style = "border: 0px solid red";
+        }
+
+
+    </script>
+
+    <select name="mySelect" id="mySelect" onchange="changeImage()">
+        <option value = "">Audi</option>
+        <option value = "">BMW</option> 
+        <option value = "">Mercedes</option>
+        <option value = "">Volvo</option>
+    </select>
+    <img onmousover = "showBorder()" onmouseout = "hideBorder()" style = "left: 0px;" src = "#">
+</body>
+</html>
