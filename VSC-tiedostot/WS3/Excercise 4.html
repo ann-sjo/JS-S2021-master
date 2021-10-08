@@ -7,9 +7,39 @@
     <title>Excercise 4</title>
 </head>
 <body>
-   
+    <form>
+        <textarea id="txt" placeholder = "Anna teksti."></textarea></textarea>
+        <br>
+        <h3 id="counter">
+        <button id="btn">Send</button>
+    </form>
     <script>
-        
+        document.getElementsId("txt").addEventListener("keydown", count);
+        document.getElementsId("txt").addEventListener("focus", attention);
+        document.getElementsId("btn").addEventListener("click", validate);
+        var counter = 0;
+        var left = 250;
+
+        function validate(){
+            var textbox = document.getElementById("txt");
+            if (textbox.value == "" || counter == 0){
+                alert("Empty field");
+                textbox.style = "background: white";
+                return false;
+            }
+        }
+
+        function count(){
+            counter++;
+            left--;
+            document.getElementById("counter").innerHTML = counter + "/" + left;
+        }
+
+        function attention(){
+            var textbox = document.getElementById("txt");
+            textbox.value = "Fill in data";
+            textbox.style = "background: red";
+        }
     </script>
 </body>
 </html>
