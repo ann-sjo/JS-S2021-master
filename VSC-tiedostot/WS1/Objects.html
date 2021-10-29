@@ -8,7 +8,7 @@
 </head>
 <body>
     <script>
-// Define an object to hold data for a person
+// Määritetään objekti ja arvo
 var person = {
     firstName:"John",
     lastName:"Doe",
@@ -17,18 +17,18 @@ var person = {
     address:"Street 1",
     telephone:"+Numbers"
 };
-// Command to print a variable from object: person
+// Printaataan 1 muuttujan arvo konsoliin
 console.log(person.age);
 
-// A function to print object: person
+// Ohjeet, jolla kaikki muuttujan arvot printataan konsoliin
 var printInfo = function printInfo() {
     console.log(person);
 }
 
-// Calling function printInfo
+// Käsky printata
 printInfo(person);
 
-// Array with 4 objects
+// Array neljällä objektilla
 function object1(arr){
 var arr = [person1, person2, person3, person4];
     var person1 = {
@@ -48,8 +48,8 @@ var arr = [person1, person2, person3, person4];
         lastName:"Muontain",
     }
 }
-//kesken
-// Loop through objects and print firstName + lastName
+// kesken/ei toimi
+// Loopataan objektien läpi ja printataan firstName + lastName
     for (var i=0; i<4; i++) {
         console.log(object1((i).firstName + " " + (i).lastName));
     }
