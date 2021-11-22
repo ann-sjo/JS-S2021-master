@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS5 1 Contact Form</title>
+</head> 
+<body>
+    <script src="stylesheet1.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        table, tr, td{
+            border: 1px solid gray;
+            width: 50%;
+        }
+    </style>
+
+<h2>Exercise 1: Contact Form</h2>
+<p data-line="4">Below you see a simple contact form which has fields for email 
+address   and comments.</p>
+<p data-line="6">a) Write JavaScript code which checks the input fields when the form 
+submit-button is clicked. Display the entered values with alert -dialogs. Use onsubmit-
+event on the form tag. </p>
+<p data-line="8">b) Enhance the code and write if-statements to check the following: 
+the length of email address should be atleast 6 and less than 15. It should also have a  
+@ - character. Check also that the comment field is not be empty and the content 
+should be trimmed down to 50 characters. Utilize JavaScript <a 
+href="http://www.w3schools.com/js/js_string_methods.asp" target="_blank">String-
+methods</a>.</p>
+<p data-line="12">c) Should an error occur, highlight the erroneous field and provide 
+some feedback to the user. Preferably by displaying some text message on the page, 
+next to the input field. Make sure that your code cancels the submission of the form by 
+returning false. Otherwise text fields and style changes will be cleared. Hint: See the 
+PowerPoint -slides.</p>
+
+<form onsubmit="return validate()">
+
+	Email address:<br>
+  <input id="email" type="text" name="email">
+  <br>
+	Comment:<br>
+  <textarea name="comment"></textarea>
+	<br>
+    <input type="submit" value="Send">
+</form>
+</p>
+
+</body>
+</html>
