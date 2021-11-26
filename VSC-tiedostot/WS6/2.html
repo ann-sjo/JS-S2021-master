@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WS6 2</title> 
+</head>
+<body onload="päivitä();">
+    <script>
+    function päivitä(){
+        document.getElementById("sessiondata").innerHTML = localStorage.getItem("destination");
+        document.getElementById("sessiondata").innerHTML += localStorage.getItem("date");
+        document.getElementById("sessiondata").innerHTML += localStorage.getItem("extras");
+        
+        // konsoliin listataan itemit
+        for(var i in localStorage) {
+            console.log(i + ' = ' + localStorage[i]);
+        }
+    } 
+    </script> 
+</body>
+</html>

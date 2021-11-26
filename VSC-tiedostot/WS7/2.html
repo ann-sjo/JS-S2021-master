@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WS7 2</title>
+  </head>
+  <script>
+    var xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.open(
+      "GET",
+      "http://iceberg-cycle.codio.io/5: Asynchronous JavaScript (AJAX)/famous-quotes.xml",
+      true
+    );
+    xmlhttp.send();
+
+    function loadXMLFile() {
+      xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          document.getElementById("quotes").innerHTML = xmlhttp.responseText;
+        }
+      };
+    }
+  </script>
+  <body>
+    <div>
+      <h2>Exercise 2: AJAX call to an XML file</h2>
+    </div>
+    <div>
+      <p>
+        Create an AJAX script, which will load the famous-quotes.xml file from
+        the server: https://pastebin.com/raw/0a76zwmh <br />
+        and inject the raw contents of the file to a div below (id=�quotes�).
+        Here's another alternative: http://quotes.rest/qod.xml.
+      </p>
+    </div>
+    <div>
+      <p>
+        NOTE: The raw XML data looks weird on the browser. You can use developer
+        tools to study the contents by inspecting the DIV.
+      </p>
+    </div>
+    <div>
+      <p>The sample function shown in PowerPoint slides is pasted below.</p>
+    </div>
+    <div>
+      <pre>
+// Load AJAX content into web page
+                function loadXMLDoc() {
+                    // Create AJAX object
+                    var xmlhttp = new XMLHttpRequest();
+                    // Specify the data / url to be fetched
+                    xmlhttp.open("GET", "INSERT URL/FILENAME HERE", true);
+                    xmlhttp.send();
+                    xmlhttp.onreadystatechange = function() {
+                        if(xmlhttp.readyState == 4 &amp;&amp; xmlhttp.status == 200) {
+                             // find myDiv and insert results there
+                            document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+                    }
+                }
+              }
+        </pre
+      >
+    </div>
+    <div>&nbsp;</div>
+    <div>
+      <p><input id="Fetch2" type="button" value="Button" /></p>
+    </div>
+    <div>
+      <div id="quotes">&nbsp;</div>
+    </div>
+    <div></div>
+  </body>
+</html>
