@@ -1,7 +1,6 @@
 var dest = document.getElementById("destination").value;
 var date = document.getElementById("arrival").value;
 var extras = "";
-
 var services = document.getElementById("services").innerHTML;
 
 var selections = document.querySelectorAll(
