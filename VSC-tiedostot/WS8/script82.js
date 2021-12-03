@@ -6,4 +6,5 @@ function loadJSONDoc() {
 
 function loadJSONDocWithParse() {
   var url = "https://api.myjson.com/bins/18bfgz";
+  var jsonObj; = JSON.parse();
 }
