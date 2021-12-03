@@ -12,7 +12,7 @@ function firstButton(){
     document.getElementById("").innerHTML = firstName + " " + lastName;
   }
   
-  // Create a for loop
+  // looppi taulukon tulostukseen
   function thirdButton(){
     var text = '{ "employees" : [' +
     '{ "firstName":"John" , "lastName":"Doe" },' +
